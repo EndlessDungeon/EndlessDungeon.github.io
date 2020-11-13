@@ -10436,7 +10436,7 @@ a:focus {
 .sidebar .sidebar-brand {
   height: 4.375rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 800;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -10446,7 +10446,7 @@ a:focus {
 }
 
 .sidebar .sidebar-brand .sidebar-brand-icon i {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .sidebar .sidebar-brand .sidebar-brand-text {
@@ -10518,7 +10518,7 @@ a:focus {
     content: '\f105';
   }
   .sidebar .sidebar-brand .sidebar-brand-icon i {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .sidebar .sidebar-brand .sidebar-brand-text {
     display: inline;
@@ -10573,7 +10573,7 @@ a:focus {
     display: none;
   }
   .sidebar.toggled .sidebar-brand .sidebar-brand-icon i {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .sidebar.toggled .sidebar-brand .sidebar-brand-text {
     display: none;
