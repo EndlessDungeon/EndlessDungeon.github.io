@@ -544,7 +544,7 @@ pre code {
 
 .pre-scrollable {
   max-height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .container {
@@ -3680,7 +3680,7 @@ input[type="button"].btn-block {
 }
 
 .custom-switch {
-  padding-left: 2.25rem;
+  padding-left: 0.5rem;
 }
 
 .custom-switch .custom-control-label::before {
@@ -4120,7 +4120,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
 }
 
 .navbar .container,
@@ -4538,7 +4538,7 @@ input[type="button"].btn-block {
 }
 
 .card-header {
-  padding: 0.5rem;
+  padding: 7.5px;
   margin-bottom: 0;
   background-color: #f8f9fc;
   border-bottom: 1px solid #e3e6f0;
@@ -5761,7 +5761,7 @@ a.close.disabled {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 0.75rem 0.75rem;
   border-bottom: 1px solid #e3e6f0;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
@@ -5780,7 +5780,7 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .modal-footer {
@@ -7704,7 +7704,7 @@ button.bg-dark:focus {
 
 .mb-2,
 .my-2 {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 10px !important;
 }
 
 .ml-2,
@@ -9981,6 +9981,10 @@ a:focus {
   font-size: .7rem;
 }
 
+.text-md {
+  font-size: 1rem;
+}
+
 .text-lg {
   font-size: 1.2rem;
 }
@@ -10158,7 +10162,7 @@ a:focus {
 }
 
 .topbar {
-  height: 4.375rem;
+  height: 60px;
 }
 
 .topbar #sidebarToggleTop {
@@ -10190,7 +10194,7 @@ a:focus {
 }
 
 .topbar .nav-item .nav-link {
-  height: 4.375rem;
+  height: 60px;
   display: flex;
   align-items: center;
   padding: 0 0.75rem;
@@ -10434,7 +10438,7 @@ a:focus {
 }
 
 .sidebar .sidebar-brand {
-  height: 4.375rem;
+  height: 5.375rem;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 800;
@@ -10856,6 +10860,29 @@ a:focus {
   border-radius: 0.25rem 0.25rem;
 }
 
+.pet-exp {
+  position: relative;
+  width: 100%;
+  border-top: 0px;
+}
+
+.pet-exp-text {
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  padding: 0.25rem;
+  border-radius: 0.25rem 0.25rem;
+  border: 1px solid #CCCCCC;
+  font-weight: bold;
+}
+
+.pet-exp-bar {
+  background-color: #19B5FE;
+  padding: 0.25rem;
+  width: 100%;
+  border-radius: 0.25rem 0.25rem;
+}
+
 .cursor-button{
   cursor: pointer;
 }
@@ -10883,6 +10910,14 @@ a:focus {
 
 .height-2-row{
   height: 32px;
+}
+
+.tab-active {
+  border-radius: 0.25rem;
+  border: 1px solid #000000;
+  background-color: #00ffff;
+  margin: 0.2rem;
+  padding: 0.25rem;
 }
 
 .tab-button-active {
@@ -10930,6 +10965,10 @@ a:focus {
 
 .skill-disabled {
   background-color: #CCCCCC;
+}
+
+.collect-reward {
+  background-color: #FFB3A7;
 }
 
 .prestige-button {
@@ -11400,7 +11439,7 @@ form.user .btn-user {
 }
 
 footer.sticky-footer {
-  padding: 1rem 0;
+  padding: 15px 0;
   flex-shrink: 0;
 }
 
