@@ -10927,6 +10927,7 @@ a:focus {
   width: 100%;
   margin: 0.2rem;
   padding: 0.25rem;
+  cursor: pointer;
 }
 
 .tab-button-unactive {	
@@ -10937,6 +10938,7 @@ a:focus {
   width: 100%;
   margin: 0.2rem;
   padding: 0.25rem;
+  cursor: pointer;
 }
 
 .upgrade-level-button {
