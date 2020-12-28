@@ -619,8 +619,8 @@ pre code {
 }
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 0 !important; 
+  margin-left: 0 !important;
 }
 
 .no-gutters > .col,
@@ -5339,6 +5339,10 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 768px) {
+  .mt-2-5-cond{
+	margin-top: 0.75rem;
+  }
+  
   .list-group-horizontal-md {
     flex-direction: row;
   }
@@ -5364,6 +5368,10 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 992px) {
+  .mt-2-5-cond{
+	margin-top: 0.75rem;
+  }
+  
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -5389,6 +5397,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 1200px) {
+  .mt-2-5-cond{
+	margin-top: 0.75rem;
+  }
   .list-group-horizontal-xl {
     flex-direction: row;
   }
@@ -7928,6 +7939,14 @@ button.bg-dark:focus {
   padding-left: 3rem !important;
 }
 
+.pt-10x{
+  padding-top: 10px !important;
+}
+
+.pt-35x{
+  padding-top: 35px !important;
+}
+
 .m-n1 {
   margin: -0.25rem !important;
 }
@@ -9903,7 +9922,7 @@ a:focus {
 
 .bg-gradient-success {
   background-color: #1cc88a;
-  background-image: linear-gradient(180deg, #1cc88a 10%, #13855c 100%);
+  background-image: linear-gradient(90deg, #00FF00 0%, #26C281 100%);
   background-size: cover;
 }
 
@@ -10802,7 +10821,7 @@ a:focus {
   height: 32px;
 }
 
-.enemy-hp {
+.animate-bar {
   position: relative;
   width: 100%;
   border-top: 0px;
@@ -10837,10 +10856,97 @@ a:focus {
   background-color: #5edb5e;
 }
 
-.daily-task {
-  position: relative;
+.gods-bg-color {
+   background-image: url("../images/gods-color.png");
+   background-size: 45px;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: #0000FF;
+   font-weight: bold;
+}
+
+.gods-bg-bw {
+   background-image: url("../images/gods.png");
+   background-size: 45px;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: #0000FF;
+   font-weight: bold;
+}
+.gods-text {
+  position: absolute;
   width: 100%;
-  border-top: 0px;
+  height: 32px;
+  padding: 0.25rem;
+  border-radius: 0.25rem 0.25rem;
+  border: 1px solid #CCCCCC;
+  font-weight: bold;
+}
+
+.gods-bar {
+  background-color: #fdd835;
+  padding: 0.25rem; 
+  border-radius: 0.25rem 0.25rem;
+}
+
+.gods-img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.achievement-bg-color {
+   background-image: url("../images/achievement-bg-color.png");
+   background-size: 45px;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: #0000FF;
+   font-weight: bold;
+}
+
+.achievement-bg-bw {
+   background-image: url("../images/achievement-bg-bw.png");
+   background-size: 45px;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: #0000FF;
+   font-weight: bold;
+}
+.achievement-text {
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  padding: 0.25rem;
+  border-radius: 0.25rem 0.25rem;
+  border: 1px solid #CCCCCC;
+  font-weight: bold;
+}
+
+.achievement-bar {
+  background-color: #FFD700;
+  padding: 0.25rem;
+  border-radius: 0.25rem 0.25rem;
+}
+
+.temple-img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.soul-text {
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  padding: 0.25rem;
+  border-radius: 0.25rem 0.25rem;
+  border: 1px solid #CCCCCC;
+  font-weight: bold;
+}
+
+.soul-bar {
+  background-color: #FFD700;
+  padding: 0.25rem;
+  
+  border-radius: 0.25rem 0.25rem;
 }
 
 .daily-task-text {
@@ -10858,12 +10964,6 @@ a:focus {
   padding: 0.25rem;
   width: 100%;
   border-radius: 0.25rem 0.25rem;
-}
-
-.pet-exp {
-  position: relative;
-  width: 100%;
-  border-top: 0px;
 }
 
 .pet-exp-text {
@@ -10941,7 +11041,21 @@ a:focus {
   cursor: pointer;
 }
 
+.drop-down-list {
+  border-radius: 0.25rem;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+  width: 100%;
+}
+
 .upgrade-level-button {
+  border-radius: 0.25rem;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+  width: 100%;
+}
+
+.shop-button-class {
   border-radius: 0.25rem;
   border: 1px solid #CCCCCC;
   cursor: pointer;
@@ -10958,15 +11072,18 @@ a:focus {
 }
 
 .skill-active {
-  background-color: #26C281;
+  /*background-color: #26C281;*/
+  background-image: linear-gradient(45deg, #26C281 0%, #00FF00 100%);
 }
 
 .skill-running {
   background-color: #FFFB33;
+  background-image: linear-gradient(45deg, #f6c23e 0%, #FFFB33 100%);
 }
 
 .skill-disabled {
   background-color: #CCCCCC;
+  background-image: linear-gradient(45deg, #888888 0%, #FEFEFE 100%);
 }
 
 .collect-reward {
