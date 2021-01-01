@@ -229,12 +229,6 @@ label {
   margin-bottom: 0.5rem;
 }
 
-button {
-  border-radius: 0.25rem;
-  font-family: 'Comic Sans MS', cursive, sans-serif !important;
-  font-size: 14px !important;
-}
-
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -366,30 +360,6 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
-}
-
-h1, .h1 {
-  font-size: 2.5rem;
-}
-
-h2, .h2 {
-  font-size: 2rem;
-}
-
-h3, .h3 {
-  font-size: 1.75rem;
-}
-
-h4, .h4 {
-  font-size: 1.5rem;
-}
-
-h5, .h5 {
-  font-size: 1.25rem;
-}
-
-h6, .h6 {
-  font-size: 1rem;
 }
 
 .lead {
@@ -5313,7 +5283,57 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-left-width: 1px;
 }
 
+@media (min-width: 0px) {
+  body{
+	font-size: 12px;
+  }
+  
+  h1, .h1 {
+    font-size: 18px;
+  }
+
+  h2, .h2 {
+    font-size: 16px;
+  }
+
+  h3, .h3 {
+    font-size: 15px;
+  }
+  
+  h4, .h4 {
+    font-size: 14px;
+  }
+
+  h5, .h5 {
+    font-size: 13px;
+  }
+  
+  h6, .h6 {
+    font-size: 12px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 12px;
+  }
+}
+
 @media (min-width: 576px) {
+  body{
+	font-size: 13px;
+  }
+  
+  h6, .h6 {
+    font-size: 13px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 13px;
+  }
+  
   .list-group-horizontal-sm {
     flex-direction: row;
   }
@@ -5339,6 +5359,20 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 768px) {
+  body{
+	font-size: 14px;
+  }
+  
+  h6, .h6 {
+    font-size: 14px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 14px;
+  }
+  
   .mt-2-5-cond{
 	margin-top: 0.75rem;
   }
@@ -5368,6 +5402,20 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 992px) {
+  body{
+	font-size: 15px;
+  }
+  
+  h6, .h6 {
+    font-size: 15px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 15px;
+  }
+  
   .mt-2-5-cond{
 	margin-top: 0.75rem;
   }
@@ -5397,6 +5445,20 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 1200px) {
+  body{
+	font-size: 16px;
+  }
+  
+  h6, .h6 {
+    font-size: 16px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 16px;
+  }
+  
   .mt-2-5-cond{
 	margin-top: 0.75rem;
   }
@@ -11072,22 +11134,20 @@ a:focus {
 }
 
 .skill-active {
-  /*background-color: #26C281;*/
   background-image: linear-gradient(45deg, #26C281 0%, #00FF00 100%);
 }
 
 .skill-running {
-  background-color: #FFFB33;
   background-image: linear-gradient(45deg, #f6c23e 0%, #FFFB33 100%);
 }
 
 .skill-disabled {
-  background-color: #CCCCCC;
   background-image: linear-gradient(45deg, #888888 0%, #FEFEFE 100%);
 }
 
 .collect-reward {
-  background-color: #FFB3A7;
+  background-image: linear-gradient(45deg, #FF3333 0%, #FFB3A7 100%);
+  background-color: #;
 }
 
 .prestige-button {
