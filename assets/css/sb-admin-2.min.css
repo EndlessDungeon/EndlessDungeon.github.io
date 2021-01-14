@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #000000;
   text-align: left;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -226,13 +226,8 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem;
-}
-
-button {
-  border-radius: 0.25rem;
-  font-family: 'Comic Sans MS', cursive, sans-serif !important;
-  font-size: 14px !important;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 button:focus {
@@ -366,30 +361,6 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
-}
-
-h1, .h1 {
-  font-size: 2.5rem;
-}
-
-h2, .h2 {
-  font-size: 2rem;
-}
-
-h3, .h3 {
-  font-size: 1.75rem;
-}
-
-h4, .h4 {
-  font-size: 1.5rem;
-}
-
-h5, .h5 {
-  font-size: 1.25rem;
-}
-
-h6, .h6 {
-  font-size: 1rem;
 }
 
 .lead {
@@ -3613,9 +3584,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-label {
-  position: relative;
   margin-bottom: 0;
-  vertical-align: top;
 }
 
 .custom-control-label::before {
@@ -3681,6 +3650,16 @@ input[type="button"].btn-block {
 
 .custom-switch {
   padding-left: 0.5rem;
+}
+
+.v-center{
+  display: inline-grid;
+  align-items: center;
+}
+
+.v-center-flex{
+  display: inline-flex;
+  align-items: center;
 }
 
 .custom-switch .custom-control-label::before {
@@ -5175,7 +5154,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-radius: 0.35rem;
 }
 
-.progress-bar {
+/*.progress-bar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5185,7 +5164,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   white-space: nowrap;
   background-color: #4e73df;
   transition: width 0.6s ease;
-}
+}*/
 
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
@@ -5313,7 +5292,166 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-left-width: 1px;
 }
 
+@media (min-width: 0px) {
+  body{
+	font-size: 12px;
+  }
+  
+  h1, .h1 {
+    font-size: 18px;
+  }
+
+  h2, .h2 {
+    font-size: 16px;
+  }
+
+  h3, .h3 {
+    font-size: 15px;
+  }
+  
+  h4, .h4 {
+    font-size: 14px;
+  }
+
+  h5, .h5 {
+    font-size: 13px;
+  }
+  
+  h6, .h6 {
+    font-size: 12px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 13px;
+  }
+  
+  .image-size, .image-size-static{
+	width: 14px;
+  }
+  
+  .image-size-2, .image-size-2-static{
+	width: 19px;
+  }
+  
+  .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2px;
+    text-align: center;
+	max-width: 35px;
+	height: 25px;
+	margin-left: 3px;
+	margin-right: 4px;
+  }
+  
+  .down-count { 
+    margin-right: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .up-count {
+    margin-left: 1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  } 
+   
+  .enemy-name {
+    position: absolute;
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.25rem 0.25rem 0 0;
+    font-weight: bold;
+	height: 28px;
+  }
+  
+  .timer-bar {
+    padding: 0.25rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: 28px;
+  }
+  
+  .enemy-hp-text {
+    position: absolute;
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    border: 1px solid #CCCCCC;
+    border-top: 0px;
+    font-weight: bold;
+    height: 28px;
+  }
+  
+  .progress-bar-hp {
+    background-color: #ed685f;
+    padding: 0.3rem;
+    width: 100%;
+    border-radius: 0 0 0.25rem 0.25rem;
+	height: 28px;
+  }
+  
+  .progress-bar-div {
+    position: absolute;
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.25rem 0.25rem;
+    font-weight: bold;
+	height: 28px;
+  }
+  
+  .progress-bar {
+    border-radius: 0.25rem 0.25rem;
+	height:28px;
+  }
+  
+  asd
+}
+
 @media (min-width: 576px) {
+  body{
+	font-size: 13px;
+  }
+  
+  h1, .h1 {
+    font-size: 19px;
+  }
+
+  h2, .h2 {
+    font-size: 17px;
+  }
+
+  h3, .h3 {
+    font-size: 16px;
+  }
+  
+  h4, .h4 {
+    font-size: 15px;
+  }
+
+  h5, .h5 {
+    font-size: 14px;
+  }
+  
+  h6, .h6 {
+    font-size: 13px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 14px;
+  }
+  
+  .image-size-2, .image-size-2-static{
+	width: 20px;
+  }
+  
   .list-group-horizontal-sm {
     flex-direction: row;
   }
@@ -5339,6 +5477,38 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 768px) {
+  body{
+	font-size: 14px;
+  }
+  
+  h1, .h1 {
+    font-size: 20px;
+  }
+
+  h2, .h2 {
+    font-size: 18px;
+  }
+
+  h3, .h3 {
+    font-size: 17px;
+  }
+  
+  h4, .h4 {
+    font-size: 16px;
+  }
+
+  h5, .h5 {
+    font-size: 15px;
+  }
+  
+  h6, .h6 {
+    font-size: 14px;
+  }
+
+  .image-size, .image-size-static{
+	width: 15px;
+  }
+  
   .mt-2-5-cond{
 	margin-top: 0.75rem;
   }
@@ -5368,6 +5538,99 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 992px) {
+  body{
+	font-size: 15px;
+  }
+  
+  .enemy-name {
+    position: absolute;
+    width: 100%;
+    padding: 0.1rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.25rem 0.25rem 0 0;
+    font-weight: bold;
+	height: 28px;
+  }
+  
+  .timer-bar {
+    padding: 0.25rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: 28px;
+  }
+  
+  .enemy-hp-text {
+    position: absolute;
+    width: 100%;
+    padding: 0.15rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    border: 1px solid #CCCCCC;
+    border-top: 0px;
+    font-weight: bold;
+    height: 28px;
+  }
+  
+  .progress-bar-hp {
+    background-color: #ed685f;
+    padding: 0.2rem;
+    width: 100%;
+    border-radius: 0 0 0.25rem 0.25rem;
+	height: 28px;
+  }
+  
+  .progress-bar-div {
+    position: absolute;
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.25rem 0.25rem;
+    font-weight: bold;
+	height: 30px;
+  }
+  
+  .progress-bar {
+    border-radius: 0.25rem 0.25rem;
+	height:30px;
+  }
+  
+  h1, .h1 {
+    font-size: 21px;
+  }
+
+  h2, .h2 {
+    font-size: 19px;
+  }
+
+  h3, .h3 {
+    font-size: 18px;
+  }
+  
+  h4, .h4 {
+    font-size: 17px;
+  }
+
+  h5, .h5 {
+    font-size: 16px;
+  }
+  
+  h6, .h6 {
+    font-size: 15px;
+  }
+  
+  .image-size, .image-size-static{
+	width: 15px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 15px;
+  }
+  
+  .image-size-2, .image-size-2-static{
+	width: 21px;
+  }
+  
   .mt-2-5-cond{
 	margin-top: 0.75rem;
   }
@@ -5397,6 +5660,63 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 1200px) {
+  body{
+	font-size: 16px;
+  }
+  
+  h1, .h1 {
+    font-size: 22px;
+  }
+
+  h2, .h2 {
+    font-size: 20px;
+  }
+
+  h3, .h3 {
+    font-size: 19px;
+  }
+  
+  h4, .h4 {
+    font-size: 18px;
+  }
+
+  h5, .h5 {
+    font-size: 17px;
+  }
+  
+  h6, .h6 {
+    font-size: 16px;
+  }
+  
+  button {
+    border-radius: 0.25rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-size: 16px;
+  }
+  
+  .image-size, .image-size-static{
+	width: 16px;
+  }
+  
+  .image-size-2, .image-size-2-static{
+	width: 22px;
+  }
+  
+  .progress-bar-div {
+    position: absolute;
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.25rem 0.25rem;
+    font-weight: bold;
+	height: 32px;
+  }
+  
+  .progress-bar {
+    border-radius: 0.25rem 0.25rem;
+	height:32px;
+  }
+  
   .mt-2-5-cond{
 	margin-top: 0.75rem;
   }
@@ -10811,45 +11131,10 @@ a:focus {
   text-align: center;
 }
 
-.enemy-name {
-  position: absolute;
-  width: 100%;
-  padding: 0.25rem;
-  border: 1px solid #CCCCCC;
-  border-radius: 0.25rem 0.25rem 0 0;
-  font-weight: bold;
-  height: 32px;
-}
-
 .animate-bar {
   position: relative;
   width: 100%;
   border-top: 0px;
-}
-
-.enemy-hp-text {
-  position: absolute;
-  width: 100%;
-  height: 32px;
-  padding: 0.25rem;
-  border-radius: 0 0 0.25rem 0.25rem;
-  border: 1px solid #CCCCCC;
-  border-top: 0px;
-  font-weight: bold;
-}
-
-.progress-bar-hp {
-  background-color: #ed685f;
-  padding: 0.25rem;
-  width: 100%;
-  border-radius: 0 0 0.25rem 0.25rem;
-}
-
-.timer-bar {
-  padding: 0.25rem;
-  width: 100%;
-  border-radius: 0.25rem 0.25rem 0 0;
-  height: 32px;
 }
 
 .timer-bar-bgcolor {
@@ -10873,23 +11158,51 @@ a:focus {
    color: #0000FF;
    font-weight: bold;
 }
-.gods-text {
-  position: absolute;
-  width: 100%;
-  height: 32px;
-  padding: 0.25rem;
-  border-radius: 0.25rem 0.25rem;
-  border: 1px solid #CCCCCC;
-  font-weight: bold;
+
+.achievement-progress-bar-color{
+  background-color: #FFD700;
 }
 
-.gods-bar {
+.gods-progress-bar-color {
   background-color: #fdd835;
-  padding: 0.25rem; 
-  border-radius: 0.25rem 0.25rem;
 }
 
-.gods-img {
+.ability-progress-bar-color {
+  background-color: #36b9cc;
+}
+
+.gods {
+  background-image: url("../images/gods.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 150px;
+}
+
+.gods-color {
+  background-image: url("../images/gods-color.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 150px;
+}
+
+.goddess {
+  background-image: url("../images/goddess.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 150px;
+}
+
+.goddess-color {
+  background-image: url("../images/goddess-color.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   max-width: 150px;
 }
@@ -10921,66 +11234,30 @@ a:focus {
   font-weight: bold;
 }
 
-.achievement-bar {
-  background-color: #FFD700;
-  padding: 0.25rem;
-  border-radius: 0.25rem 0.25rem;
-}
-
 .temple-img {
   width: 100%;
   max-width: 300px;
 }
 
-.soul-text {
-  position: absolute;
+.barracks-img {
   width: 100%;
-  height: 32px;
-  padding: 0.25rem;
-  border-radius: 0.25rem 0.25rem;
-  border: 1px solid #CCCCCC;
-  font-weight: bold;
+  max-width: 200px;
 }
 
-.soul-bar {
+.soul-progress-bar-color {
   background-color: #FFD700;
-  padding: 0.25rem;
-  
-  border-radius: 0.25rem 0.25rem;
 }
 
-.daily-task-text {
-  position: absolute;
-  width: 100%;
-  height: 32px;
-  padding: 0.25rem;
-  border-radius: 0.25rem 0.25rem;
-  border: 1px solid #CCCCCC;
-  font-weight: bold;
-}
-
-.daily-task-bar {
+.daily-task-progress-bar-color {
   background-color: #BF55EC;
-  padding: 0.25rem;
-  width: 100%;
-  border-radius: 0.25rem 0.25rem;
 }
 
-.pet-exp-text {
-  position: absolute;
-  width: 100%;
-  height: 32px;
-  padding: 0.25rem;
-  border-radius: 0.25rem 0.25rem;
-  border: 1px solid #CCCCCC;
-  font-weight: bold;
-}
-
-.pet-exp-bar {
+.pet-progress-bar-color {
   background-color: #19B5FE;
-  padding: 0.25rem;
-  width: 100%;
-  border-radius: 0.25rem 0.25rem;
+}
+
+.active-bg-color {
+  background-color: #00ffff;
 }
 
 .cursor-button{
@@ -10998,14 +11275,14 @@ a:focus {
   background-image: url("../../assets/images/minus.svg");
   background-size: 12px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 
 .hide-menu {
   background-image: url("../../assets/images/plus.svg");
   background-size: 12px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 
 .height-2-row{
@@ -11046,6 +11323,7 @@ a:focus {
   border: 1px solid #CCCCCC;
   cursor: pointer;
   width: 100%;
+  overflow-y: visible !important;
 }
 
 .upgrade-level-button {
@@ -11072,22 +11350,20 @@ a:focus {
 }
 
 .skill-active {
-  /*background-color: #26C281;*/
   background-image: linear-gradient(45deg, #26C281 0%, #00FF00 100%);
 }
 
 .skill-running {
-  background-color: #FFFB33;
   background-image: linear-gradient(45deg, #f6c23e 0%, #FFFB33 100%);
 }
 
 .skill-disabled {
-  background-color: #CCCCCC;
   background-image: linear-gradient(45deg, #888888 0%, #FEFEFE 100%);
 }
 
 .collect-reward {
-  background-color: #FFB3A7;
+  background-image: linear-gradient(45deg, #FF3333 0%, #FFB3A7 100%);
+  background-color: #;
 }
 
 .prestige-button {
@@ -11100,8 +11376,16 @@ a:focus {
   position:relative;
   border: 1px solid #CCCCCC;
   border-radius: 0.5rem;
+  padding: 0.25rem;  
   margin: 0.5rem;
-  padding: 0.5rem;  
+}
+
+.border-bottom-only {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.border-top-only {
+  border-top: 1px solid #CCCCCC;
 }
 
 .unlock-info {
