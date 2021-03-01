@@ -11306,11 +11306,11 @@ a:focus {
 }
 
 .pet-progress-bar-color {
-  background-color: #19B5FE;
+  background-color: #4e73df;
 }
 
 .active-bg-color {
-  background-color: #00ffff;
+  background-color: #003171;
 }
 
 .cursor-button{
@@ -11408,6 +11408,7 @@ a:focus {
 
 .skill-running {
   background-image: linear-gradient(45deg, #f6c23e 0%, #FFFB33 100%);
+  color: #000000 !important;
 }
 
 .skill-disabled {
