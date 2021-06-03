@@ -2401,13 +2401,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  color: #fff !important;
+  background-color: #4e73df !important;
+  border-color: #4e73df !important;
 }
 
 .btn-primary:hover {
-  color: #fff;
+  color: #fff ;
   background-color: #2e59d9;
   border-color: #2653d4;
 }
@@ -2438,9 +2438,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #858796;
-  border-color: #858796;
+  color: #fff !important;
+  background-color: #858796 !important;
+  border-color: #858796 !important;
 }
 
 .btn-secondary:hover {
@@ -5400,12 +5400,24 @@ a.badge-dark:focus, a.badge-dark.focus {
     font-size: 13px;
   }
   
+  .button-2-row {
+	height: 44px;  
+  }
+  
   .image-size, .image-size-static{
 	width: 14px;
   }
   
   .image-size-2, .image-size-2-static{
 	width: 19px;
+  }
+  
+  .image-crit{
+	width: 35px;
+  }
+  
+  .image-check-in {
+	width: 35px;
   }
   
   .image-dwellers{
@@ -5575,6 +5587,10 @@ a.badge-dark:focus, a.badge-dark.focus {
     font-size: 14px;
   }
   
+  .button-2-row {
+	height: 46px;  
+  }
+  
   .image-size-2, .image-size-2-static{
 	width: 20px;
   }
@@ -5671,6 +5687,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   h6, .h6 {
     font-size: 14px;
+  }
+  
+  .button-2-row {
+	height: 46px;  
   }
 
   .image-size, .image-size-static{
@@ -5826,6 +5846,10 @@ a.badge-dark:focus, a.badge-dark.focus {
     font-size: 15px;
   }
   
+  .button-2-row {
+	height: 50px;  
+  }
+  
   .image-size, .image-size-static{
 	width: 15px;
   }
@@ -5934,6 +5958,10 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-radius: 0.25rem;
     font-family: 'Comic Sans MS', cursive, sans-serif !important;
     font-size: 16px;
+  }
+  
+  .button-2-row {
+	height: 52px;  
   }
   
   .image-size, .image-size-static{
@@ -8247,6 +8275,11 @@ button.bg-dark:focus {
   line-height: 1.75rem;
 }
 
+.h-log-battle {
+  overflow-y: hidden;
+  line-height: 1.75rem;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -8444,6 +8477,10 @@ button.bg-dark:focus {
   padding-left: 0 !important;
 }
 
+.p-05 {
+  padding: 0.125rem !important;
+}
+
 .p-1 {
   padding: 0.25rem !important;
 }
@@ -8451,6 +8488,14 @@ button.bg-dark:focus {
 .pt-1,
 .py-1 {
   padding-top: 0.25rem !important;
+}
+
+.pl-05{
+  padding-left: 0.125rem !important;
+}
+
+.pr-05{
+  padding-right: 0.125rem !important;
 }
 
 .pr-1,
@@ -10226,6 +10271,10 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
+.font-underline {
+  text-decoration: underline;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -10814,11 +10863,11 @@ a:focus {
 }
 
 .topbar {
-  height: 50px;
+  height: 40px;
 }
 
 .topbar #sidebarToggleTop {
-  margin-right: .25rem;
+  margin-right: 0rem;
 }
 
 .topbar #sidebarToggleTop:hover {
@@ -10846,10 +10895,10 @@ a:focus {
 }
 
 .topbar .nav-item .nav-link {
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
-  padding: 0 0.75rem;
+  padding: 0 0rem;
 }
 
 .topbar .nav-item .nav-link:focus {
@@ -11556,9 +11605,8 @@ a:focus {
   top: 0;
   left: 0;
   height: 100%; /* Full height (cover the whole page) */
-  background-color: #000000; /* Black background with opacity */
+  background: rgba(0,0,0,0.7);
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  opacity: 0.7;
 }
 
 .soul-progress-bar-color {
@@ -11578,7 +11626,11 @@ a:focus {
 }
 
 .cursor-button{
-  cursor: pointer;
+  cursor: pointer !important;
+}
+
+.cursor-default{
+  cursor: default !important;	
 }
 
 .show-menu {
@@ -11668,20 +11720,24 @@ a:focus {
 
 .skill-active {
   background-image: linear-gradient(45deg, #26C281 0%, #00FF00 100%);
+  color: #000000 !important;
+  cursor: pointer;
 }
 
 .skill-running {
   background-image: linear-gradient(45deg, #f6c23e 0%, #FFFB33 100%);
   color: #000000 !important;
+  cursor: pointer;
 }
 
 .skill-disabled {
   background-image: linear-gradient(45deg, #888888 0%, #FEFEFE 100%);
+  color: #555555 !important;
+  cursor: default;
 }
 
 .collect-reward {
   background-image: linear-gradient(45deg, #FF3333 0%, #FFB3A7 100%);
-  background-color: #;
 }
 
 .prestige-button {
@@ -11734,6 +11790,10 @@ a:focus {
 
 .right-align{
   text-align: right;
+}
+
+.middle-content{
+  justify-content: center;
 }
 
 .left-border {
@@ -12173,17 +12233,21 @@ form.user .btn-user {
 }
 
 footer.sticky-footer {
-  padding: 10px 0;
+  padding: 3px 0;
   flex-shrink: 0;
   position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
+  font-size: 10px;
+}
+
+.bottom-position{
+  bottom: 0;	
 }
 
 footer.sticky-footer .copyright {
   line-height: 1;
-  font-size: 0.8rem;
 }
 
 body.sidebar-toggled footer.sticky-footer {
