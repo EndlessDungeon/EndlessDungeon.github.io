@@ -5365,6 +5365,22 @@ a.badge-dark:focus, a.badge-dark.focus {
   vertical-align: middle;
 }
 
+.notif-icon{
+  background-image: url(../images/red-dot.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 2px;
+}
+
+.notif-icon2{
+  background-image: url(../images/red-dot.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 2px;
+}
+
 @media (min-width: 0px) {
   body{
 	font-size: 12px;
