@@ -37,7 +37,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Calibri", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -48,7 +48,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Calibri";
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Calibri", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5412,7 +5412,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   button {
     border-radius: 0.25rem;
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-family: 'Calibri', cursive, sans-serif !important;
     font-size: 13px;
   }
   
@@ -5599,7 +5599,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   button {
     border-radius: 0.25rem;
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-family: 'Calibri', cursive, sans-serif !important;
     font-size: 14px;
   }
   
@@ -5905,7 +5905,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   button {
     border-radius: 0.25rem;
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-family: 'Calibri', cursive, sans-serif !important;
     font-size: 15px;
   }
   
@@ -5972,7 +5972,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   button {
     border-radius: 0.25rem;
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-family: 'Calibri', cursive, sans-serif !important;
     font-size: 16px;
   }
   
@@ -6498,7 +6498,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Calibri", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6611,7 +6611,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Calibri", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8298,7 +8298,10 @@ button.bg-dark:focus {
 
 .h-tower-floor {
   overflow-y: auto;
+  overflow-x: hidden;
   line-height: 1.75rem;
+  padding-right: 1%;
+  
 }
 
 .h-log-battle {
@@ -11267,8 +11270,8 @@ a:focus {
 .sidebar .sidebar-brand {
   height: 5.375rem;
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: bolder;
   padding: 1.5rem 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -11291,8 +11294,8 @@ a:focus {
 .sidebar .sidebar-heading {
   text-align: left !important;
   padding: 0 0.25rem;
-  font-weight: 800;
-  font-size: 0.75rem;
+  font-weight: 1000;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
@@ -11828,6 +11831,21 @@ a:focus {
   width: 100%;
 }
 
+.achievement-button {
+  border-radius: 0.25rem;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+  width: 100%;
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+  background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+
 .shop-button-class {
   border-radius: 0.25rem;
   border: 1px solid #CCCCCC;
@@ -11841,7 +11859,6 @@ a:focus {
   cursor: pointer;
   font-weight: bold;
   width: 100%; 
-  padding: 0.25rem;
 }
 
 .skill-active {
@@ -11859,7 +11876,7 @@ a:focus {
 .skill-disabled {
   background-image: linear-gradient(45deg, #888888 0%, #FEFEFE 100%);
   color: #555555 !important;
-  cursor: default;
+  cursor: default !important;
 }
 
 .collect-reward {
