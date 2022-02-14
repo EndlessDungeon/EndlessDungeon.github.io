@@ -360,7 +360,7 @@
 
             $('body').on('click', '#tourEnd', function() {
                 methods.destroy();
-				hero.tutorialGroupId = -1;
+				/*updateTutorialId(-1);*/
             });
 
             $('body').on('keydown', function(e){
