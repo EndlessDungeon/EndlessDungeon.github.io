@@ -66,11 +66,11 @@ body {
   line-height: 1.5;
   color: #000000;
   text-align: left;
-  background-color: #000000;
+  background-color: #222222;
 }
 
 .dark-mode{
-  background-color: black;
+  background-color: #222222;
   color: white;
 }
 
@@ -7150,7 +7150,7 @@ button.bg-dark:focus {
 }
 
 .bg-dark {
-  background-color: #333333 !important;
+  background-color: #444444 !important;
 }
 
 .bg-transparent {
@@ -11167,6 +11167,12 @@ a:focus {
   min-height: 100vh;
 }
 
+.sidebar-scrollable{
+  max-height:600px;
+  overflow-y:auto;
+  overflow-x:clip;
+}
+
 .sidebar .nav-item {
   position: relative;
 }
@@ -11321,7 +11327,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 14rem !important;
+    width: 7.5rem !important;
   }
   .sidebar .nav-item .collapse {
     position: relative;
@@ -11344,19 +11350,17 @@ a:focus {
     margin: 0 1rem;
   }
   .sidebar .nav-item .nav-link {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-    width: 14rem;
+    text-align: center;
+    padding: 0.25rem 0.25rem;
+    width: 7.5rem;
   }
   .sidebar .nav-item .nav-link i {
     font-size: 0.85rem;
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
-    display: inline;
+    font-size: 0.65rem;
+    display: block;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
     width: 1rem;
@@ -11382,7 +11386,7 @@ a:focus {
   }
   .sidebar.toggled {
     overflow: visible;
-    width: 6.5rem !important;
+    width: 7.5rem !important;
   }
   .sidebar.toggled .nav-item .collapse {
     position: absolute;
@@ -11414,7 +11418,7 @@ a:focus {
   .sidebar.toggled .nav-item .nav-link {
     text-align: center;
     padding: 0.25rem 0.25rem;
-    width: 6.5rem;
+    width: 7.5rem;
   }
   .sidebar.toggled .nav-item .nav-link span {
     font-size: 0.65rem;
@@ -11827,6 +11831,18 @@ a:focus {
   width: 100%;
   padding: 0.25rem;
   cursor: pointer;
+}
+
+.tab-button-highest {
+  border-radius: 0.25rem;
+  border: 0;
+  width: 100%;
+  padding: 0.25rem;
+  cursor: pointer;
+  background-image: url(../images/crown.svg);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .drop-down-list {
