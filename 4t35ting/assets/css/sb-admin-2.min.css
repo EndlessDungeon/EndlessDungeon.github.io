@@ -66,11 +66,11 @@ body {
   line-height: 1.5;
   color: #000000;
   text-align: left;
-  background-color: #000000;
+  background-color: #222222;
 }
 
 .dark-mode{
-  background-color: black;
+  background-color: #222222;
   color: white;
 }
 
@@ -618,7 +618,7 @@ pre code {
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-25, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-05, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-05, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -888,6 +888,10 @@ pre code {
   .col-sm-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;
+  }
+  .col-sm-25 {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
   .col-sm-3 {
     flex: 0 0 25%;
@@ -5359,6 +5363,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   padding-right:25px;
 }
 
+.image-offline{
+  height: 90px;	
+}
+
 .center-image-div{
   display: inline-block;
   height: 100%;
@@ -5375,6 +5383,14 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .notif-icon2{
   background-image: url(../images/red-dot.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 2px;
+}
+
+.lock-icon{
+  background-image: url(../images/lock.svg);
   background-size: 10px;
   background-repeat: no-repeat;
   background-position-x: 70%;
@@ -5481,11 +5497,11 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
   
   .star-img {
-    width: 14px;
+    width: 7px;
   }
 
   .star-height {
-    line-height: 14px;
+    line-height: 7px;
   }
   
   .mt-2-cond{
@@ -5894,7 +5910,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   .star-div{
 	width: 70px;
   }
-  
+   
   .partner-div{
 	width: 93px;
   }
@@ -5911,6 +5927,14 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   .image-size-2, .image-size-2-static{
 	width: 21px;
+  }
+  
+  .star-img {
+    width: 11.5px;
+  }
+
+  .star-height {
+    line-height: 11.5px;
   }
   
   .mt-2-5-cond{
@@ -6024,11 +6048,11 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
   
   .star-img {
-    width: 10.5px;
+    width: 14px;
   }
 
   .star-height {
-    line-height: 10.5px;
+    line-height: 14px;
   }
   
   .mt-2-5-cond{
@@ -7130,7 +7154,7 @@ button.bg-dark:focus {
 }
 
 .bg-dark {
-  background-color: #333333 !important;
+  background-color: #444444 !important;
 }
 
 .bg-transparent {
@@ -11147,6 +11171,12 @@ a:focus {
   min-height: 100vh;
 }
 
+.sidebar-scrollable{
+  max-height:600px;
+  overflow-y:auto;
+  overflow-x:clip;
+}
+
 .sidebar .nav-item {
   position: relative;
 }
@@ -11301,7 +11331,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 14rem !important;
+    width: 7.5rem !important;
   }
   .sidebar .nav-item .collapse {
     position: relative;
@@ -11324,19 +11354,17 @@ a:focus {
     margin: 0 1rem;
   }
   .sidebar .nav-item .nav-link {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-    width: 14rem;
+    text-align: center;
+    padding: 0.25rem 0.25rem;
+    width: 7.5rem;
   }
   .sidebar .nav-item .nav-link i {
     font-size: 0.85rem;
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
-    display: inline;
+    font-size: 0.65rem;
+    display: block;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
     width: 1rem;
@@ -11362,7 +11390,7 @@ a:focus {
   }
   .sidebar.toggled {
     overflow: visible;
-    width: 6.5rem !important;
+    width: 7.5rem !important;
   }
   .sidebar.toggled .nav-item .collapse {
     position: absolute;
@@ -11394,7 +11422,7 @@ a:focus {
   .sidebar.toggled .nav-item .nav-link {
     text-align: center;
     padding: 0.25rem 0.25rem;
-    width: 6.5rem;
+    width: 7.5rem;
   }
   .sidebar.toggled .nav-item .nav-link span {
     font-size: 0.65rem;
@@ -11734,7 +11762,7 @@ a:focus {
   top: 0;
   left: 0;
   height: 100%; /* Full height (cover the whole page) */
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
@@ -11807,6 +11835,18 @@ a:focus {
   width: 100%;
   padding: 0.25rem;
   cursor: pointer;
+}
+
+.tab-button-highest {
+  border-radius: 0.25rem;
+  border: 0;
+  width: 100%;
+  padding: 0.25rem;
+  cursor: pointer;
+  background-image: url(../images/crown.svg);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .drop-down-list {
