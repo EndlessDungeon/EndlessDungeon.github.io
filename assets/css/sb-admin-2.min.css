@@ -5363,6 +5363,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   padding-right:25px;
 }
 
+.image-offline{
+  height: 90px;	
+}
+
 .center-image-div{
   display: inline-block;
   height: 100%;
