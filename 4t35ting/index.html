@@ -1067,7 +1067,7 @@
 		  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  v-center-flex middle-content">
 			<button id="buy-tower-all-minus" class="down-count btn-info" title="Down All"><<</button>
 			<button id="buy-tower-minus" class="down-count btn-info" title="Down">-</button>
-			<input type="text" id="buy-tower-key" class="form-control validate image-check-in" value="1" maxlength="1" autocomplete="off" required pattern="[0-9]+" readonly>
+			<input type="text" id="buy-tower-key" class="form-control validate w-12" value="1" maxlength="2" autocomplete="off" required pattern="[0-9]+" readonly>
 			<button id="buy-tower-plus" class="up-count btn-info" title="Up">+</button>
 			<button id="buy-tower-all-plus" class="up-count btn-info" title="Up All">>></button>&nbsp;		    
 		    <img src="assets/images/token.svg" class="image-size">&nbsp;<span id="token-buy-tower-key"></span>		    
@@ -1581,8 +1581,9 @@
                 </div>
                 <div class="card-body">
                   <div class="enemy-area">
-                    <div class="enemy-name">
-					  <span id="current-enemy-name"></span>&nbsp;
+                    <div class="enemy-name v-center-flex2 middle-content">
+					  <span id="current-enemy-name"></span>&nbsp;&nbsp;&nbsp;
+					  <img id="current-boss-timer-img" src="assets/images/duration.svg" title="Boss Timer" class="image-size d-none"></img>&nbsp;
 					  <span id="current-boss-timer"></span>
 					</div>
 					<div id="timer-bar" class="timer-bar">&nbsp;</div>
@@ -2706,11 +2707,11 @@
 					<div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12">
 					  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 v-center-flex">
 					    <label class="mt-2">Warning</label>&nbsp;
-					    <input type="text" id="setting-warning-percentage-hp" class="form-control validate star-div" maxlength="2" autocomplete="off" required pattern="[0-9]+">% HP
+					    <input type="text" id="setting-warning-percentage-hp" class="form-control validate w-15" maxlength="2" autocomplete="off" required pattern="[0-9]+">% HP
 					  </div>
 					  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 v-center-flex">
 					    <label class="mt-2">Danger</label>&nbsp;
-						<input type="text" id="setting-danger-percentage-hp" class="form-control validate star-div" maxlength="2" autocomplete="off" required pattern="[0-9]+"> % HP
+						<input type="text" id="setting-danger-percentage-hp" class="form-control validate w-15" maxlength="2" autocomplete="off" required pattern="[0-9]+"> % HP
 					  </div>
 					</div>
 				  </div>
