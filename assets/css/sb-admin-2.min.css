@@ -3724,6 +3724,11 @@ input[type="button"].btn-block {
   align-items: center;
 }
 
+.v-center-flex2{
+  display: flex;
+  align-items: center;
+}
+
 .v-center-grid{
   display: inline-grid;
   align-items: center;
@@ -8265,6 +8270,14 @@ button.bg-dark:focus {
 
 .shadow-none {
   box-shadow: none !important;
+}
+
+.w-12 {
+  width: 12% !important;
+}
+
+.w-15 {
+  width: 15% !important;
 }
 
 .w-25 {
