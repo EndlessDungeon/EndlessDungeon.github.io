@@ -11950,12 +11950,26 @@ a:focus {
   margin: 0.25rem;
 }
 
+.rounded-card-overlay {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  top: 0;
+  left: 0;
+  height: 100%; /* Full height (cover the whole page) */
+  background: rgba(0,0,0,0.4);
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
 .selected-rounded-card {
   position:relative;
   border: 3px solid #00FFFF;
   border-radius: 0.5rem;
   padding: 0.25rem;  
   margin: 0.25rem;
+}
+
+.selected-text {
+  color: #00FFFF !important;
 }
 
 .border-bottom-only {
