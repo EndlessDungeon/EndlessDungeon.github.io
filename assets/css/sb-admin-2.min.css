@@ -11862,6 +11862,18 @@ a:focus {
   background-position: center;
 }
 
+.tab-button-back {
+  border-radius: 0.25rem;
+  border: 0;
+  width: 100%;
+  padding: 0.25rem;
+  cursor: pointer;
+  background-image: url(../images/back.svg);
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .drop-down-list {
   border-radius: 0.25rem;
   border: 1px solid #CCCCCC;
