@@ -1869,6 +1869,10 @@ pre code {
   }
 }
 
+.scrollable-x {
+  overflow-x: auto;
+}
+
 .table-responsive {
   display: block;
   width: 100%;
