@@ -11799,6 +11799,10 @@ a:focus {
   background-color: #003171;
 }
 
+.font-black {
+  color: #000000 !important;
+}
+
 .cursor-button{
   cursor: pointer !important;
 }
