@@ -3723,6 +3723,11 @@ input[type="button"].btn-block {
   align-items: center;
 }
 
+.v-center-inline{
+  display: inline;
+  align-items: center;
+}
+
 .v-center-flex{
   display: inline-flex;
   align-items: center;
@@ -5451,6 +5456,14 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   .image-size-2, .image-size-2-static{
 	width: 19px;
+  }
+  
+  .image-size-3, .image-size-3-static{
+	width: 25px;
+  }
+  
+  .image-size-4, .image-size-4-static{
+	width: 30px;
   }
   
   .image-crit{
@@ -8300,6 +8313,10 @@ button.bg-dark:focus {
 
 .w-100 {
   width: 100% !important;
+}
+
+.w-150p {
+  width: 150px !important;
 }
 
 .w-auto {
