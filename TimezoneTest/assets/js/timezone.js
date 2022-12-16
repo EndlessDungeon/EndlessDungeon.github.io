@@ -1,17 +1,1 @@
-(function($) {
-  "use strict";
-  
-  var initData = function(){
-	let date = new Date();
-	let dateUTC = new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate(),date.getHours(),date.getMinutes(),date.getSeconds()));
-	let currentDate = "Date Now:"+new Date(date.getFullYear(),date.getMonth(),date.getDate(),date.getHours(),date.getMinutes(),date.getSeconds());
-	let currentTimestamp = "Timestamp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:"+date.getTime();
-	let currentUTCDate = "Date UTC:"+dateUTC;
-	let currentUTCTimestamp = "UTC Timestamp:"+dateUTC.getTime();
-	let offset = "Offset: "+(date.getTimezoneOffset()/60)+" Hour(s)";
-
-	$("#container").html(currentDate+"<br/>"+currentUTCDate+"<br/>"+currentTimestamp+"<br/>"+currentUTCTimestamp+"<br/>"+offset);
-  };
-  
-  initData();
-})(jQuery);
+(function($) { "use strict"; var nextActiveDate; var timezoneDiff; var offset; var offlineTimeFormat = function(offlineSecond){ let offlineHour = Math.floor(offlineSecond / 3600); let offlineMinute = Math.floor((offlineSecond - (offlineHour * 3600)) / 60); let offlineSec = Math.floor(offlineSecond - (offlineHour * 3600) - (offlineMinute * 60)); if(offlineHour < 10) offlineHour = "0"+offlineHour; if(offlineMinute < 10) offlineMinute = "0"+offlineMinute; if(offlineSec < 10) offlineSec = "0"+offlineSec; return offlineHour+":"+offlineMinute+":"+offlineSec; }; var getCurrentTimestamp = function(){ let date = new Date(); let currentDatetime = date.getTime(); if(timezoneDiff != undefined) currentDatetime += timezoneDiff; return currentDatetime; }; var restDailyResetTimer = function(){ let currentTime = getCurrentTimestamp(); return (nextActiveDate-currentTime)/1000; }; var initData = function(){ $("#container").empty(); let date = new Date(); offset = date.getTimezoneOffset(); console.log(offset*60); //let date2 = date + (offset * 60000); let localDatetime = new Date(2022,11,15,7,0,0); let serverDatetime = new Date(2022,11,15,0,0,0); let date2 = new Date(); let serverDt = new Date(Date.UTC(date2.getUTCFullYear(), date2.getUTCMonth(), date2.getUTCDate(), date2.getUTCHours(), date2.getUTCMinutes(), date2.getUTCSeconds())); let localDate = "Local Time&nbsp;&nbsp;&nbsp;: "+date.getTime()+" - "+date; let serverDate = "Server Time&nbsp;&nbsp;: "+serverDt.getTime()+" - "+date.toUTCString(); let string = "Test Local&nbsp;&nbsp;:"+localDatetime.getTime()+" - "+localDatetime+"<br/>"; string += "Test Server :"+(localDatetime.getTime()+(offset*60000))+" - "+localDatetime.toUTCString()+"<br/>"; string += localDate+"<br/>"; string += serverDate; $("#container").html(string); }; var setActiveDate = function(){ let date = new Date(getCurrentTimestamp()); nextActiveDate = new Date(date.getFullYear(), date.getMonth(), date.getDate()+1).getTime() - (offset * 60000); if(timezoneDiff != undefined) nextActiveDate -= timezoneDiff; let restResetTimerString = restDailyResetTimer(); $("#container").append("<br/>Next Local Reset Time : "+new Date(nextActiveDate)+"<br/>Next Server Reset Time : "+new Date(nextActiveDate).toUTCString()+"<br/>Reset In : "+offlineTimeFormat(restResetTimerString)); }; initData(); setActiveDate(); })(jQuery);
