@@ -11210,7 +11210,7 @@ a:focus {
 }
 
 .sidebar {
-  width: 6.5rem;
+  width: 7.5rem;
   min-height: 100vh;
 }
 
@@ -11433,7 +11433,7 @@ a:focus {
   }
   .sidebar.toggled {
     overflow: visible;
-    width: 7.5rem !important;
+    width: 8.5rem !important;
   }
   .sidebar.toggled .nav-item .collapse {
     position: absolute;
