@@ -11940,6 +11940,13 @@ a:focus {
   width: 100%;
 }
 
+.dpc-button-hatch {
+  background-image: url(../images/block.svg);
+  background-repeat: repeat;
+  background-size: contain;
+  border: 3px red solid;
+}
+
 .upgrade-level-button {
   border-radius: 0.25rem;
   border: 1px solid #CCCCCC;
