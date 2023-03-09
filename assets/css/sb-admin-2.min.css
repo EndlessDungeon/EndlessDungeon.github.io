@@ -2427,6 +2427,12 @@ fieldset:disabled a.btn {
   border-color: #4e73df !important;
 }
 
+.btn-ads {
+  color: #000000 !important;
+  background-color: #b6efff !important;
+  border: dashed 3px #64bce0 !important;
+}
+
 .btn-primary:hover {
   color: #fff ;
   background-color: #2e59d9;
@@ -8553,6 +8559,10 @@ button.bg-dark:focus {
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 5rem !important;
 }
 
 .p-0 {
