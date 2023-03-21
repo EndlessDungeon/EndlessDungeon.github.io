@@ -7339,6 +7339,10 @@ button.bg-dark:focus {
   content: "";
 }
 
+.b-none {
+  background: none !important;
+}
+
 .d-none {
   display: none !important;
 }
@@ -11933,6 +11937,71 @@ a:focus {
   background-size: 22px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+.tab-button-news {
+  border-radius: 0.25rem;
+  border: 0;
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-image: url(../images/news.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+  animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
 }
 
 .drop-down-list {
