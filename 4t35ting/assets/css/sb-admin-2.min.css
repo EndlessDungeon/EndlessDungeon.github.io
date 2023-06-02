@@ -5400,6 +5400,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   height: 90px;	
 }
 
+.image-game{
+  height: 150px;	
+}
+
 .center-image-div{
   display: inline-block;
   height: 100%;
@@ -5471,6 +5475,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   
   .image-size, .image-size-static{
 	width: 14px;
+  }
+  
+  .image-size-15, .image-size-static{
+	width: 16px;
   }
   
   .image-size-2, .image-size-2-static{
@@ -7337,6 +7345,10 @@ button.bg-dark:focus {
   display: block;
   clear: both;
   content: "";
+}
+
+.b-none {
+  background: none !important;
 }
 
 .d-none {
@@ -10885,6 +10897,14 @@ a:focus {
   background-color: #3a3b45 !important;
 }
 
+.bg-lightblue {
+  background-color: lightblue !important;	
+}
+
+.bg-lightgreen {
+  background-color: lightgreen !important;	
+}
+
 .o-hidden {
   overflow: hidden !important;
 }
@@ -11933,6 +11953,78 @@ a:focus {
   background-size: 22px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+.tab-button-news {
+  border-radius: 0.25rem;
+  border: 0;
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-image: url(../images/news.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+  animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
+.blink-image {
+  -moz-animation: blink normal 1.5s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 1.5s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 1.5s infinite ease-in-out; /* IE */
+  animation: blink normal 1.5s infinite ease-in-out; /* Opera and prob css3 final iteration */
 }
 
 .drop-down-list {
