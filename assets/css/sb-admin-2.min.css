@@ -12109,9 +12109,14 @@ a:focus {
 }
 
 .prestige-button {
-  background-color: #ff00ff;
-  font-weight: bold;
+  border-radius: 0.25rem;
+  border: 1px solid #CCCCCC;
+  background-color: #FF00FF;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 0.25rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .rounded-card {
