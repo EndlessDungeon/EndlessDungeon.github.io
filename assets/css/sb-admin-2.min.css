@@ -2433,6 +2433,14 @@ fieldset:disabled a.btn {
   border: dashed 3px #64bce0 !important;
 }
 
+.btn-sell {
+  color: #ffffff !important;
+  background-color: #ed685f !important;
+  border-radius: 0.25rem;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+}
+
 .btn-primary:hover {
   color: #fff ;
   background-color: #2e59d9;
@@ -5422,7 +5430,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-image: url(../images/red-dot.svg);
   background-size: 10px;
   background-repeat: no-repeat;
-  background-position-x: 70%;
+  background-position-x: 75%;
   background-position-y: 2px;
 }
 
